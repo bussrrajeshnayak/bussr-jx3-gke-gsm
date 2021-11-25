@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - bussrrajeshnayak/bussr-jx3-gke-gsm
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.34.69.81.209.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
