@@ -1,0 +1,80 @@
+# Source: lighthouse/templates/foghorn-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lighthouse-foghorn
+  labels:
+    chart: "lighthouse-1.3.0"
+    app: lighthouse-foghorn
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  annotations:
+    meta.helm.sh/release-name: 'lighthouse'
+    wave.pusher.com/update-on-config-change: 'true'
+  namespace: jx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lighthouse-foghorn
+  template:
+    metadata:
+      labels:
+        app: lighthouse-foghorn
+      annotations:
+        jenkins-x.io/hash: '324dcfe70ef801d9904d5f9ce3c827d3cb8990a930581515dee82a3cf1f5477c'
+    spec:
+      serviceAccountName: lighthouse-foghorn
+      containers:
+        - name: lighthouse-foghorn
+          image: ghcr.io/jenkins-x/lighthouse-foghorn:1.3.0
+          imagePullPolicy: IfNotPresent
+          args:
+            - "--namespace=jx"
+          env:
+            - name: "GIT_KIND"
+              value: "github"
+            - name: "GIT_SERVER"
+              value: "https://github.com"
+            - name: "GIT_USER"
+              value: bussrrajeshnayak
+            - name: "GIT_TOKEN"
+              valueFrom:
+                secretKeyRef:
+                  name: lighthouse-oauth-token
+                  key: oauth
+            - name: "HMAC_TOKEN"
+              valueFrom:
+                secretKeyRef:
+                  name: "lighthouse-hmac-token"
+                  key: hmac
+                  optional: false
+            - name: "JX_LOG_FORMAT"
+              value: "stackdriver"
+            - name: "LOGRUS_FORMAT"
+              value: "stackdriver"
+            - name: LOGRUS_SERVICE
+              value: "lighthouse"
+            - name: LOGRUS_SERVICE_VERSION
+              value: "1.3.0"
+            - name: LOGRUS_STACK_SKIP
+              value: ""
+            - name: DEFAULT_PIPELINE_RUN_SERVICE_ACCOUNT
+              value: "tekton-bot"
+            - name: DEFAULT_PIPELINE_RUN_TIMEOUT
+              value: "2h0m0s"
+            - name: FILE_BROWSER
+              value: "git"
+            - name: JX_DEFAULT_IMAGE
+              value: "ghcr.io/jenkins-x/builder-maven:2.1.149-768"
+            - name: LIGHTHOUSE_DASHBOARD_TEMPLATE
+              value: "namespaces/{{ .Namespace }}/pipelineruns/{{ .PipelineRun }}"
+            - name: LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG
+              value: "60d2f020b3003672ecbc8c9abd2f3cf20344fee2"
+          resources:
+            limits:
+              cpu: 100m
+              memory: 256Mi
+            requests:
+              cpu: 80m
+              memory: 128Mi
+      terminationGracePeriodSeconds: 180
