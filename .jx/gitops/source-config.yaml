@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: nodejs
     - name: react-quickstart
     scheduler: in-repo
   slack:
