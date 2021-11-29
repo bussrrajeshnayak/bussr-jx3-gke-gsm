@@ -11,6 +11,7 @@ spec:
     - name: golang-http
     - name: nodejs
     - name: react-quickstart
+    - name: spring
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
