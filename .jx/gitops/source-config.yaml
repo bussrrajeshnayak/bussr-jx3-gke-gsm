@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: golang-http
+    - name: node-project
     - name: nodejs
     - name: react-quickstart
     - name: spring
