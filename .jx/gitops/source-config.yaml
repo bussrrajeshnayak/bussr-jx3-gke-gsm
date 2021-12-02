@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: golang-http
+    - name: golang-http-01
     - name: golang-http-new
     - name: node-project
     - name: nodejs
