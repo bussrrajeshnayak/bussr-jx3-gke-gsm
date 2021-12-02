@@ -8,6 +8,13 @@ data:
     in_repo_config:
       enabled:
         bussrrajeshnayak/bussr-jx3-gke-gsm: true
+        bussrrajeshnayak/golang-http: true
+        bussrrajeshnayak/golang-http-01: true
+        bussrrajeshnayak/golang-http-new: true
+        bussrrajeshnayak/node-project: true
+        bussrrajeshnayak/nodejs: true
+        bussrrajeshnayak/react-quickstart: true
+        bussrrajeshnayak/spring: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +27,13 @@ data:
         skip-unknown-contexts: false
       merge_method:
         bussrrajeshnayak/bussr-jx3-gke-gsm: merge
+        bussrrajeshnayak/golang-http: merge
+        bussrrajeshnayak/golang-http-01: merge
+        bussrrajeshnayak/golang-http-new: merge
+        bussrrajeshnayak/node-project: merge
+        bussrrajeshnayak/nodejs: merge
+        bussrrajeshnayak/react-quickstart: merge
+        bussrrajeshnayak/spring: merge
       queries:
       - labels:
         - approved
@@ -31,6 +45,13 @@ data:
         - needs-rebase
         repos:
         - bussrrajeshnayak/bussr-jx3-gke-gsm
+        - bussrrajeshnayak/golang-http-01
+        - bussrrajeshnayak/golang-http-new
+        - bussrrajeshnayak/golang-http
+        - bussrrajeshnayak/node-project
+        - bussrrajeshnayak/nodejs
+        - bussrrajeshnayak/react-quickstart
+        - bussrrajeshnayak/spring
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +62,13 @@ data:
         - needs-rebase
         repos:
         - bussrrajeshnayak/bussr-jx3-gke-gsm
+        - bussrrajeshnayak/golang-http-01
+        - bussrrajeshnayak/golang-http-new
+        - bussrrajeshnayak/golang-http
+        - bussrrajeshnayak/node-project
+        - bussrrajeshnayak/nodejs
+        - bussrrajeshnayak/react-quickstart
+        - bussrrajeshnayak/spring
       target_url: http://lighthouse-jx.34.69.81.209.nip.io/merge/status
 kind: ConfigMap
 metadata:

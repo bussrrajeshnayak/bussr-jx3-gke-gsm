@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: bussrrajeshnayak
+    provider: github
+    repository: golang-http-new
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: bussrrajeshnayak-golang-http-new
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/bussrrajeshnayak/golang-http-new.git
+  org: bussrrajeshnayak
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: golang-http-new
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/bussrrajeshnayak/golang-http-new

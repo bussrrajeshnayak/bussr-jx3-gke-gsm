@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: bussrrajeshnayak
+    provider: github
+    repository: spring
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: bussrrajeshnayak-spring
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/bussrrajeshnayak/spring.git
+  org: bussrrajeshnayak
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: spring
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/bussrrajeshnayak/spring
