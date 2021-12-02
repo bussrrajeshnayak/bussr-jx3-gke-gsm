@@ -12,6 +12,7 @@ spec:
     - name: golang-http
     - name: golang-http-01
     - name: golang-http-new
+    - name: node-http-01
     - name: node-project
     - name: nodejs
     - name: react-quickstart
