@@ -9,6 +9,9 @@ Modify the `jx-requirements.yml` file
 Now git commit and push any changes...
 
 ```bash 
+
 git add *
+
 git commit -a -m "chore: Jenkins X changes"
+
 ```
