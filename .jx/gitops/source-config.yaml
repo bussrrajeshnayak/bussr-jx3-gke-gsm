@@ -18,6 +18,12 @@ spec:
     - name: react-quickstart
     - name: spring
     scheduler: in-repo
+  - owner: imsagar
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: nginx
+    scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
