@@ -8,8 +8,8 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
-    - name: bussr-jx3-gke-gsm
     - name: -node-project
+    - name: bussr-jx3-gke-gsm
     - name: golang-http
     - name: golang-http-01
     - name: golang-http-new
