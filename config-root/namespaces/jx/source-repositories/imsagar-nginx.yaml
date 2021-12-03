@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: imsagar
+    provider: github
+    repository: nginx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: imsagar-nginx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/imsagar/nginx.git
+  org: imsagar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: nginx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/imsagar/nginx

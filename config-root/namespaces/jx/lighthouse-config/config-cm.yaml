@@ -11,10 +11,12 @@ data:
         bussrrajeshnayak/golang-http: true
         bussrrajeshnayak/golang-http-01: true
         bussrrajeshnayak/golang-http-new: true
+        bussrrajeshnayak/node-http-01: true
         bussrrajeshnayak/node-project: true
         bussrrajeshnayak/nodejs: true
         bussrrajeshnayak/react-quickstart: true
         bussrrajeshnayak/spring: true
+        imsagar/nginx: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -30,10 +32,12 @@ data:
         bussrrajeshnayak/golang-http: merge
         bussrrajeshnayak/golang-http-01: merge
         bussrrajeshnayak/golang-http-new: merge
+        bussrrajeshnayak/node-http-01: merge
         bussrrajeshnayak/node-project: merge
         bussrrajeshnayak/nodejs: merge
         bussrrajeshnayak/react-quickstart: merge
         bussrrajeshnayak/spring: merge
+        imsagar/nginx: merge
       queries:
       - labels:
         - approved
@@ -48,10 +52,12 @@ data:
         - bussrrajeshnayak/golang-http-01
         - bussrrajeshnayak/golang-http-new
         - bussrrajeshnayak/golang-http
+        - bussrrajeshnayak/node-http-01
         - bussrrajeshnayak/node-project
         - bussrrajeshnayak/nodejs
         - bussrrajeshnayak/react-quickstart
         - bussrrajeshnayak/spring
+        - imsagar/nginx
       - labels:
         - updatebot
         missingLabels:
@@ -65,10 +71,12 @@ data:
         - bussrrajeshnayak/golang-http-01
         - bussrrajeshnayak/golang-http-new
         - bussrrajeshnayak/golang-http
+        - bussrrajeshnayak/node-http-01
         - bussrrajeshnayak/node-project
         - bussrrajeshnayak/nodejs
         - bussrrajeshnayak/react-quickstart
         - bussrrajeshnayak/spring
+        - imsagar/nginx
       target_url: http://lighthouse-jx.34.69.81.209.nip.io/merge/status
 kind: ConfigMap
 metadata:
