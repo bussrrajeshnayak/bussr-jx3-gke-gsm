@@ -17,6 +17,7 @@ spec:
     - name: node-project
     - name: nodejs
     - name: react-quickstart
+    - name: react-quickstart-001
     - name: spring
     scheduler: in-repo
   - owner: imsagar
