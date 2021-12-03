@@ -9,7 +9,7 @@ spec:
     clusterName: jx-cluster
     devEnvApprovers:
     - todo
-    environmentGitOwner: todo
+    environmentGitOwner: bussrrajeshnayak
     gitKind: github
     gitName: github
     gitServer: https://github.com
