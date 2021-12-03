@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: bussrrajeshnayak
+    provider: github
+    repository: react-quickstart
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: bussrrajeshnayak-react-quickstart
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/bussrrajeshnayak/react-quickstart.git
+  org: bussrrajeshnayak
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: react-quickstart
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/bussrrajeshnayak/react-quickstart

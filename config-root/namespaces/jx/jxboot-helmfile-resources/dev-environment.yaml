@@ -26,14 +26,14 @@ spec:
       kind: Scheduler
       name: jx-meta-pipeline
     dockerRegistryOrg: ""
-    envOrganisation: todo
+    envOrganisation: bussrrajeshnayak
     gitServer: https://github.com
     kubeProvider: "gke"
     pipelineUsername: "bussrrajeshnayak"
     pipelineUserEmail: "jenkins-x@googlegroups.com"
     prowConfig: Scheduler
     storageLocations:
-      - bucketUrl: gs://logs-jx-cluster-b5a21af811f6
+      - bucketUrl: gs://logs-jx-cluster-5d7f482b4ea0
         classifier: logs
-      - bucketUrl: gs://reports-jx-cluster-b5a21af811f6
+      - bucketUrl: gs://reports-jx-cluster-5d7f482b4ea0
         classifier: reports

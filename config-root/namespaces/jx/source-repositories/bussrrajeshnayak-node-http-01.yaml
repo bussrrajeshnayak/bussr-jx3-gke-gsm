@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: bussrrajeshnayak
+    provider: github
+    repository: node-http-01
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: bussrrajeshnayak-node-http-01
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/bussrrajeshnayak/node-http-01.git
+  org: bussrrajeshnayak
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: node-http-01
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/bussrrajeshnayak/node-http-01

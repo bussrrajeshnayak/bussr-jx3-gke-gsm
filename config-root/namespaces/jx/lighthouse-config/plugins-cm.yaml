@@ -6,6 +6,42 @@ data:
       repos:
       - bussrrajeshnayak/bussr-jx3-gke-gsm
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bussrrajeshnayak/golang-http-01
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bussrrajeshnayak/golang-http-new
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bussrrajeshnayak/golang-http
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bussrrajeshnayak/node-http-01
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bussrrajeshnayak/node-project
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bussrrajeshnayak/nodejs
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bussrrajeshnayak/react-quickstart
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bussrrajeshnayak/spring
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - imsagar/nginx
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -21,6 +57,51 @@ data:
         name: cd-indicators
       - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
         name: lighthouse-webui-plugin
+      bussrrajeshnayak/golang-http:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      bussrrajeshnayak/golang-http-01:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      bussrrajeshnayak/golang-http-new:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      bussrrajeshnayak/node-http-01:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      bussrrajeshnayak/node-project:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      bussrrajeshnayak/nodejs:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      bussrrajeshnayak/react-quickstart:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      bussrrajeshnayak/spring:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
+      imsagar/nginx:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
     heart: {}
     label:
       additional_labels: null
@@ -28,6 +109,150 @@ data:
     plugins:
       bussrrajeshnayak/bussr-jx3-gke-gsm:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      bussrrajeshnayak/golang-http:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      bussrrajeshnayak/golang-http-01:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      bussrrajeshnayak/golang-http-new:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      bussrrajeshnayak/node-http-01:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      bussrrajeshnayak/node-project:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      bussrrajeshnayak/nodejs:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      bussrrajeshnayak/react-quickstart:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      bussrrajeshnayak/spring:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      imsagar/nginx:
       - approve
       - assign
       - blunderbuss
@@ -55,6 +280,35 @@ data:
     - repos:
       - bussrrajeshnayak/bussr-jx3-gke-gsm
       trusted_org: todo
+    - repos:
+      - bussrrajeshnayak/golang-http-01
+      trusted_org: todo
+    - repos:
+      - bussrrajeshnayak/golang-http-new
+      trusted_org: todo
+    - repos:
+      - bussrrajeshnayak/golang-http
+      trusted_org: todo
+    - repos:
+      - bussrrajeshnayak/node-http-01
+      trusted_org: todo
+    - repos:
+      - bussrrajeshnayak/node-project
+      trusted_org: todo
+    - repos:
+      - bussrrajeshnayak/nodejs
+      trusted_org: todo
+    - repos:
+      - bussrrajeshnayak/react-quickstart
+      trusted_org: todo
+    - repos:
+      - bussrrajeshnayak/spring
+      trusted_org: todo
+    - repos:
+      - imsagar/nginx
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

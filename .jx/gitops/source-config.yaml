@@ -9,13 +9,21 @@ spec:
     providerKind: github
     repositories:
     - name: bussr-jx3-gke-gsm
+    - name: -node-project
     - name: golang-http
     - name: golang-http-01
     - name: golang-http-new
+    - name: node-http-01
     - name: node-project
     - name: nodejs
     - name: react-quickstart
     - name: spring
+    scheduler: in-repo
+  - owner: imsagar
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: nginx
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
